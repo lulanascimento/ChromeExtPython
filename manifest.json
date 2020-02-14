@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Python Chrome Plugin",
+  "description": "Python rodando no Chrome.",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "http://brython.info/console.html",
+    "https://ajax.googleapis.com/"
+ ],
+ "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self' "
+}
